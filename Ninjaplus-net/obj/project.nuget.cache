@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D2ahJVD/XyeoTfcZp2es5P5hKNHUHHDqgdNuYgCQY2qCZ4yCspoQnkqd5sgKPFfHkIj4YOGZd0oW5xleX3Sc6g==",
+  "dgSpecHash": "LvVkEaBe2msYlP1cPY8PMXuLS7PoRtOz/jtnyGgh4AKU7HvKTFVR9gIV4KugGoF2oRU9IqzGjdJ3AihH78fqTg==",
   "success": true,
-  "projectFilePath": "/Users/tmoreira/Documents/QA/Ninjaplus-net/Ninjaplus-net.csproj",
+  "projectFilePath": "/Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/Ninjaplus-net.csproj",
   "expectedPackageFiles": [
     "/Users/tmoreira/.nuget/packages/coypu/3.1.1/coypu.3.1.1.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/microsoft.codecoverage/16.5.0/microsoft.codecoverage.16.5.0.nupkg.sha512",

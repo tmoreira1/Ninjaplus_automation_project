@@ -34,6 +34,7 @@ namespace Ninjaplus.Tests
         }
 
         [Test]
+        [Category("Smoke")]
         public void ShouldBeHaveTitle()
         {
             

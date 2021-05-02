@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tmoreira/Documents/QA/Ninjaplus-net/Ninjaplus-net.csproj": {}
+    "/Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/Ninjaplus-net.csproj": {}
   },
   "projects": {
-    "/Users/tmoreira/Documents/QA/Ninjaplus-net/Ninjaplus-net.csproj": {
+    "/Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/Ninjaplus-net.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tmoreira/Documents/QA/Ninjaplus-net/Ninjaplus-net.csproj",
+        "projectUniqueName": "/Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/Ninjaplus-net.csproj",
         "projectName": "Ninjaplus-net",
-        "projectPath": "/Users/tmoreira/Documents/QA/Ninjaplus-net/Ninjaplus-net.csproj",
+        "projectPath": "/Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/Ninjaplus-net.csproj",
         "packagesPath": "/Users/tmoreira/.nuget/packages/",
-        "outputPath": "/Users/tmoreira/Documents/QA/Ninjaplus-net/obj/",
+        "outputPath": "/Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tmoreira/.nuget/NuGet/NuGet.Config"
