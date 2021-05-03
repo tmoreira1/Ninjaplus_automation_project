@@ -54,41 +54,19 @@ namespace Ninjaplus.Tests
             Assert.AreEqual("Thiago", _side.loggedUser());
 
         }
-        [Test]
-        public void ShouldSeeIncorrectPass()
+        
+        [TestCase("tcm@ninjaplus.com", "ps4d12*&3", "Usuário e/ou senha inválidos")]
+        [TestCase("Gih.maia@ninjaplus.com", "pwd123", "Usuário e/ou senha inválidos")]
+        [TestCase("", "pwd123", "Opps. Cadê o email?")]
+        [TestCase("Gih.maia@ninjaplus.com", "", "Opps. Cadê a senha?")]
+        public void ShouldSeeAlertMessage(string email, string pass, string expectMessage)
         {
 
-            _login.With("tcm@ninjaplus.com", "ps4d12*&3");
-            Assert.AreEqual("Usuário e/ou senha inválidos", _login.AlertMessage());
+            _login.With(email, pass);
+            Assert.AreEqual(expectMessage, _login.AlertMessage());
 
         }
 
-        [Test]
-        public void ShouldSeeIncorrectUser()
-        {
-
-            _login.With("Gih.maia@ninjaplus.com", "ps4d12*&3");
-            Assert.AreEqual("Usuário e/ou senha inválidos", _login.AlertMessage());
-
-        }
-
-        [Test]
-        public void ShouldSeeRequireEmail()
-        {
-
-            _login.With("", "ps4d12*&3");
-            Assert.AreEqual("Opps. Cadê o email?", _login.AlertMessage());
-
-        }
-
-        [Test]
-        public void ShouldSeeRequirePass()
-        {
-
-            _login.With("tcm@ninjaplus.com", "");
-            Assert.AreEqual("Opps. Cadê a senha?", _login.AlertMessage());
-
-        }
     }
 
 }
