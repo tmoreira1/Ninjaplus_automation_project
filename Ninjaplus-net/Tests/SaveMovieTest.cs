@@ -2,6 +2,7 @@ using NUnit.Framework;
 using NinjaPlus.Common;
 using NinjaPlus.Pages;
 using System.Threading;
+using NinjaPlus.Models;
 
 namespace NinjaPlus.Tests
 {
@@ -23,8 +24,17 @@ namespace NinjaPlus.Tests
         [Test]
         public void ShouldSaveMovie()
         {
+
+            var movieData = new MovieModel()
+            {
+                Title = "matrix reloaded",
+                Status = "Disponível",
+                Year = 2003,
+                ReleaseDate = "28/09/2003",
+                Plot = "Após derrotar as máquinas em seu combate inicial, Neo ainda vive na Nabucodonosor ao lado de Morpheus, Trinity e Link, o novo tripulante da nave."
+            };
            _movie.Add();
-           _movie.Save("matrix reloaded", "Disponível");
+           _movie.Save(movieData);
            Thread.Sleep(5000);
         }
     }

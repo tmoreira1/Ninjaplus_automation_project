@@ -1,5 +1,5 @@
 using Coypu;
-using Coypu.Drivers;
+using NinjaPlus.Models;
 
 namespace NinjaPlus.Pages
 {
@@ -26,10 +26,13 @@ namespace NinjaPlus.Pages
 
         }
 
-        public void Save(string title, string status)
+        public void Save(MovieModel movie)
         {
-            _browser.FindCss("input[name=title]").SendKeys(title);
-            SelectStatus(status);
+            _browser.FindCss("input[name=title]").SendKeys(movie.Title);
+            SelectStatus(movie.Status);
+            _browser.FindCss("input[name=year]").SendKeys(movie.Year.ToString());
+            _browser.FindCss("input[name=release_date]").SendKeys(movie.ReleaseDate);
+            _browser.FindCss("textarea[name=overview]").SendKeys(movie.Plot);
         }
     }
 }
