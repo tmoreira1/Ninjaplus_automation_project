@@ -1,49 +1,23 @@
 using NUnit.Framework;
-using Coypu;
-using Coypu.Drivers.Selenium;
-using System;
 using NinjaPlus.Pages;
+using NinjaPlus.Common;
 
 namespace Ninjaplus.Tests
 {
-    public class Logintests
+    public class LoginTests : BaseTest
     {
-
-        public BrowserSession browser;
 
         private LoginPage _login;
         private Sidebar _side;
 
         [SetUp]
-        public void Setup()
+        public void Start()
         {
 
-            var configs = new SessionConfiguration
-            {
-                AppHost = "http://ninjaplus-web",
-                Port = 5000,
-                SSL = false,
-                Driver = typeof(SeleniumWebDriver),
-                Browser = Coypu.Drivers.Browser.Chrome,
-                Timeout = TimeSpan.FromSeconds(10)
-
-            };
-
-            browser = new BrowserSession(configs);
-
-            browser.MaximiseWindow();
-
-            _login = new LoginPage(browser);
-            _side = new Sidebar(browser);
+            _login = new LoginPage(Browser);
+            _side = new Sidebar(Browser);
             
         }
-
-        [TearDown]
-        public void Finish()
-        {
-            browser.Dispose();
-        }
-
 
         [Test]
         [Category("Critical")]
@@ -51,7 +25,7 @@ namespace Ninjaplus.Tests
         {
 
             _login.With("tcm@ninjaplus.com", "pwd123");
-            Assert.AreEqual("Thiago", _side.loggedUser());
+            Assert.AreEqual("Neo", _side.loggedUser());
 
         }
         
