@@ -1,5 +1,8 @@
 using Coypu;
 using NinjaPlus.Models;
+using OpenQA.Selenium;
+using System.Collections.Generic;
+using System.Threading;
 
 namespace NinjaPlus.Pages
 {
@@ -26,12 +29,25 @@ namespace NinjaPlus.Pages
 
         }
 
+        private void InputCast(List<string> cast)
+        {
+            var element =_browser.FindCss("input[placeholder$=ator]");
+
+            foreach(var actor in cast)
+            {
+                element.SendKeys(actor);
+                element.SendKeys(Keys.Tab);
+                Thread.Sleep(500);
+            }
+        }
+
         public void Save(MovieModel movie)
         {
             _browser.FindCss("input[name=title]").SendKeys(movie.Title);
             SelectStatus(movie.Status);
             _browser.FindCss("input[name=year]").SendKeys(movie.Year.ToString());
             _browser.FindCss("input[name=release_date]").SendKeys(movie.ReleaseDate);
+            InputCast(movie.Cast);
             _browser.FindCss("textarea[name=overview]").SendKeys(movie.Plot);
         }
     }
