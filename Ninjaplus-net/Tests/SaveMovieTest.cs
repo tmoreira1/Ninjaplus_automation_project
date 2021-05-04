@@ -3,6 +3,7 @@ using NinjaPlus.Common;
 using NinjaPlus.Pages;
 using System.Threading;
 using NinjaPlus.Models;
+using System;
 
 namespace NinjaPlus.Tests
 {
@@ -32,7 +33,8 @@ namespace NinjaPlus.Tests
                 Year = 2003,
                 ReleaseDate = "28/09/2003",
                 Cast = {"Keanu Reeves", "Carrie-Anne Moss", "Hugo Weaving", "Laurence Fishburne"},
-                Plot = "Após derrotar as máquinas em seu combate inicial, Neo ainda vive na Nabucodonosor ao lado de Morpheus, Trinity e Link, o novo tripulante da nave."
+                Plot = "Após derrotar as máquinas em seu combate inicial, Neo ainda vive na Nabucodonosor ao lado de Morpheus, Trinity e Link, o novo tripulante da nave.",
+                Cover = CoverPath() + "capMatrixreload.jpg"
             };
            _movie.Add();
            _movie.Save(movieData);
