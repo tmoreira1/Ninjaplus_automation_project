@@ -195,3 +195,4 @@
 /Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/obj/Debug/netcoreapp3.1/Ninjaplus-net.pdb
 /Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/obj/Debug/netcoreapp3.1/Ninjaplus-net.genruntimeconfig.cache
 /Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/bin/Debug/netcoreapp3.1/Images/capMatrixreload.jpg
+/Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/bin/Debug/netcoreapp3.1/Npgsql.dll

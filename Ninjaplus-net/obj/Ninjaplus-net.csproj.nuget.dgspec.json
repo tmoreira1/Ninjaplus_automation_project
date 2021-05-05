@@ -51,6 +51,10 @@
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[3.16.1, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.4, )"
             }
           },
           "imports": [

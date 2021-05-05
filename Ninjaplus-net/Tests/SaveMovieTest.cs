@@ -3,6 +3,7 @@ using NinjaPlus.Common;
 using NinjaPlus.Pages;
 using System.Threading;
 using NinjaPlus.Models;
+using NinjaPlus.Lib;
 using System;
 
 namespace NinjaPlus.Tests
@@ -36,6 +37,9 @@ namespace NinjaPlus.Tests
                 Plot = "Após derrotar as máquinas em seu combate inicial, Neo ainda vive na Nabucodonosor ao lado de Morpheus, Trinity e Link, o novo tripulante da nave.",
                 Cover = CoverPath() + "capMatrixreload.jpg"
             };
+
+            Database.RemoveByTitle(movieData.Title);
+
            _movie.Add();
            _movie.Save(movieData);
            Thread.Sleep(5000);

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LvVkEaBe2msYlP1cPY8PMXuLS7PoRtOz/jtnyGgh4AKU7HvKTFVR9gIV4KugGoF2oRU9IqzGjdJ3AihH78fqTg==",
+  "dgSpecHash": "eaE2OJNJfs+vCyM1POof8eAR6gYiXzZm2vkeis20vVwASd3pFeJOvoPDMa8IJwxWEcNPZIpTWzSF8joEiFJOhA==",
   "success": true,
   "projectFilePath": "/Users/tmoreira/Documents/GitHub/Ninjaplus_automation_project/Ninjaplus-net/Ninjaplus-net.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "/Users/tmoreira/.nuget/packages/microsoft.win32.registry/4.3.0/microsoft.win32.registry.4.3.0.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/newtonsoft.json/10.0.3/newtonsoft.json.10.0.3.nupkg.sha512",
+    "/Users/tmoreira/.nuget/packages/npgsql/5.0.4/npgsql.5.0.4.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/nuget.frameworks/5.0.0/nuget.frameworks.5.0.0.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/nunit/3.12.0/nunit.3.12.0.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/nunit3testadapter/3.16.1/nunit3testadapter.3.16.1.nupkg.sha512",
@@ -50,6 +51,7 @@
     "/Users/tmoreira/.nuget/packages/system.reflection.typeextensions/4.3.0/system.reflection.typeextensions.4.3.0.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/system.resources.resourcemanager/4.3.0/system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/Users/tmoreira/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/system.runtime.extensions/4.3.0/system.runtime.extensions.4.3.0.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/system.runtime.handles/4.3.0/system.runtime.handles.4.3.0.nupkg.sha512",
     "/Users/tmoreira/.nuget/packages/system.runtime.interopservices/4.3.0/system.runtime.interopservices.4.3.0.nupkg.sha512",

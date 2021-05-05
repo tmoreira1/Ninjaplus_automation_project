@@ -41,6 +41,13 @@ namespace NinjaPlus.Pages
             }
         }
 
+        private void UploadCover(string cover)
+        {
+            var jsScript = "document.getElementById('upcover').classList.remove('el-upload__input');";
+
+            _browser.ExecuteScript(jsScript);
+            _browser.FindCss("#upcover").SendKeys(cover);
+        }
         public void Save(MovieModel movie)
         {
             _browser.FindCss("input[name=title]").SendKeys(movie.Title);
@@ -49,6 +56,10 @@ namespace NinjaPlus.Pages
             _browser.FindCss("input[name=release_date]").SendKeys(movie.ReleaseDate);
             InputCast(movie.Cast);
             _browser.FindCss("textarea[name=overview]").SendKeys(movie.Plot);
+            UploadCover(movie.Cover);
+            _browser.ClickButton("Cadastrar");
+
+
         }
     }
 }
