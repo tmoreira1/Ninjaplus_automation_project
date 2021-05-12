@@ -58,8 +58,10 @@ namespace NinjaPlus.Pages
             _browser.FindCss("textarea[name=overview]").SendKeys(movie.Plot);
             UploadCover(movie.Cover);
             _browser.ClickButton("Cadastrar");
-
-
+        }
+        public bool HasMovie(string title)
+        {
+            return _browser.FindCss("table tbody tr", text: title).Exists();
         }
     }
 }

@@ -42,7 +42,12 @@ namespace NinjaPlus.Tests
 
            _movie.Add();
            _movie.Save(movieData);
-           Thread.Sleep(5000);
+        
+            
+            Assert.That(_movie.HasMovie(movieData.Title),
+             $"Erro ao verifricar se o filme {movieData} foi cadastrado."
+             );
+
         }
     }
 }
